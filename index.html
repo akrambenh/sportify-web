@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AZZEL</title>
+
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/all.min.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css.map">
+<style>
+  
+  @keyframes slideInLeft {
+      0% {
+          transform: translateX(-100%);
+          opacity: 0;
+      }
+      100% {
+          transform: translateX(0);
+          opacity: 1;
+      }
+  }
+
+  @keyframes slideInRight {
+      0% {
+          transform: translateX(100%);
+          opacity: 0;
+      }
+      100% {
+          transform: translateX(0);
+          opacity: 1;
+      }
+  }
+
+  /* Apply the animations */
+  .animated-image {
+      animation: slideInLeft 0.5s ease forwards;
+  }
+
+  .animated-text {
+      animation: slideInRight 0.5s ease forwards;
+  }
+
+  .button-container {
+      animation-delay: 0.3s; /* Optional: delay the button animation */
+  }
+
+  .animated-button {
+      opacity: 0; /* Start hidden */
+      animation: slideInRight 0.5s ease forwards;
+  }
+
+  .animated-button:nth-child(1) {
+      animation-delay: 0.5s; /* First button delay */
+  }
+
+  .animated-button:nth-child(2) {
+      animation-delay: 0.6s; /* Second button delay */
+  }
+</style>
+</head>
+<body>
+      <nav class="navbar navbar-expand-lg navbar-light">
+        <div class="container">
+          <div class="logo-container d-flex justify-content-center ">
+            <img src="assets/LOGO.png" alt="">
+          </div>
+          <a class="col-7 col-sm-6 navbar-brand"style="display: flex;justify-content: start;" href="index.html">Sportify</a>
+          
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="container collapse navbar-collapse" id="navbarNav">
+            <ul class=" navbar-nav">
+              <li class="nav-item">
+                <a class="nav-link" aria-current="page" href="index.html">HOME</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#contact">CONTACT US</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#about-id">ABOUT US</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+    </nav>
+      <div class="container appDownload mb-5">
+        <div class="col-12 col-sm-6 d-flex justify-content-center align-items-center flex-column animated-text">
+          <div class="title text-center mb-4">
+            <h3>
+              Sports Magazine
+            </h3>
+          </div>
+          <div class="button-container">
+            <div class="button d-flex justify-content-spacebetween animated-button">
+              <i class="fa-brands fa-google-play fa-2x"></i>
+              <p>For Android</p>
+              <p>GooglePlay</p>
+            </div>
+            <div class="button d-flex justify-content-spacebetween animated-button">
+              <i class="fa-brands fa-app-store-ios fa-2x"></i>
+              <p>For IOS</p>
+              <p>AppStore</p>
+            </div>
+          </div>
+        </div>
+        <div class="phoneImage-container col-12 col-sm-6 d-flex justify-content-center animated-image">
+          <img src="assets/phone.png" alt="">
+        </div>
+      </div>
+      
+      <section class="container how-to-start">
+        <h3 class="title2 text-center mb-5 w-100">How To Start Your Journey</h3>
+        <div class="row instructions-container">
+          <div class="col-12 col-sm-4 mb-4">
+            <div class="instructions">
+              <div class="instructions-part-1">
+                <h4 class="numbers text-center ms-3">1</h4>
+                <h4>Download The App</h4>
+              </div>
+            </div>
+          </div>
+      
+          <div class="col-12 col-sm-4 mb-4">
+            <div class="instructions">
+              <div class="instructions-part-1">
+                <h4 class="numbers text-center ms-3">2</h4>
+                <h4>Create An Account</h4>
+              </div>
+            </div>
+          </div>
+      
+          <div class="col-12 col-sm-4 mb-4">
+            <div class="instructions">
+              <div class="instructions-part-1">
+                <h4 class="numbers text-center ms-3">3</h4>
+                <h4>Read More Articles</h4>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      
+    <section class="contact-us mb-5" id="contact">
+        <h3 class="title text-center">CONTACT US</h3>
+        <div class="container d-flex justify-content-center flex-direction-column flex-sm-direction-row">
+          <div class="contact-container col-12 col-sm-6 d-flex flex-column justify-content-center">
+              <div class="row col-9 d-flex flex-row align-items-center ms-sm-3">
+                <i class="fa-brands fa-whatsapp"></i>
+                <div class="col-9 col-sm-3">
+                  <h3>07.94.41.70.42</h3>
+                </div>
+              </div>
+              <div class="row col-12 col-sm-8 d-flex flex-row align-items-center">
+                <i class="fa-regular fa-envelope"></i>
+                <div class="col-9 col-sm-3">
+                  <h3>akram.forgh@gmail.com</h3>
+                </div>
+              </div>
+          </div>
+        </div>
+    </section>
+
+      <section class="container about mb-5" id="about-id">
+        <h3 class="title text-center mb-5">
+           About The App
+        </h3>
+        <div class="container d-flex ">
+      
+          <div class="about-p col-12 col-sm-6">
+            <p>Sportify is magazine that lets users with athletic and medical-sport experiences to share their knowledge.</p>
+          </div>
+          <div class="col-12 col-sm-6">
+            <img src="assets/LOGO.png" alt="">
+          </div>
+        </div>
+      </section>
+
+
+      <section class="">
+        <!-- Footer -->
+        <footer class="text-center text-md-start">
+          <!-- Grid container -->
+          <div class="container p-4">
+            <!--Grid row-->
+           
+            <div class="row">
+              <div class="col-lg-6 col-md-12 mb-4 mb-md-0">
+                <div class="container d-flex flex-row align-items-center mb-4 justify-content-start">
+                  <img class="image ms-3" src="assets/LOGO.png" alt="">
+                  <h5 class="text-uppercase ms-3"></h5>Sportify</h5>
+                </div>
+              </div>
+              <div class="list-container col-lg-3 col-md-6 mb-4 mb-md-0">
+            
+      
+                <ul class="list">
+                  <li>
+                    
+                    <a href="#about-id" >ABOUT Sportify</a>
+                  </li>
+                  <li>
+                   
+                    <a href="about.html" >PRIVACY POLICY</a>
+                  </li>
+                
+                  </li>
+                </ul>
+              </div>
+              <div class="list-container col-lg-3 col-md-6 mb-4 mb-md-0">
+            
+      
+                <ul class="list">
+                  <li>
+                    <a href="deleteAccount.html" >Delete Account</a>
+                  </li>
+                </ul>
+              </div>
+              <!--Grid column-->
+             
+            </div>
+          </div>
+          <!-- Grid container -->
+      
+          <!-- Copyright -->
+          <div class="text-center">
+            © 2024 Copyright:
+            <a class="text-body">Sportify</a>
+          </div>
+          <!-- Copyright -->
+        </footer>
+        <!-- Footer -->
+      </section>
+
+
+
+
+
+    <script src="js/all.min.js"></script>
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/bootstrap.bundle.min.js.map"></script>
+</body>
+</html>
